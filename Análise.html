@@ -1,0 +1,71 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="relat-rio-de-an-lise">Relatório de Análise</h1>
+<p>As tabelas fornecidas possuem dados de corridas de táxi na cidade de Nova Iorque.</p>
+<h2 id="requisitos-">Requisitos:</h2>
+<h3 id="qual-a-dist-ncia-m-dia-percorrida-por-viagens-com-no-m-ximo-2-passageiros-">Qual a distância média percorrida por viagens com no máximo 2 passageiros?</h3>
+<p><img src="https://imgur.com/C6Ysq5j.png" alt="01"></p>
+<p>É visível a presença de muitos outliers.
+Plotando-o mais de perto para olhar a distribuição:</p>
+<p><img src="https://imgur.com/Jb8sDF1.png" alt="02"></p>
+<p>A distância entre a média e a mediana confirmam novamente a presença de outliers.
+A distância média é de 2.66 Km.</p>
+<h3 id="quais-os-3-maiores-vendors-em-quantidade-total-de-dinheiro-arrecadado-">Quais os 3 maiores Vendors em quantidade total de dinheiro arrecadado?</h3>
+<table>
+<thead>
+<tr>
+<th>vendor_id</th>
+<th>total_amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CMT</td>
+<td>19549080</td>
+</tr>
+<tr>
+<td>VTS</td>
+<td>19043430</td>
+</tr>
+<tr>
+<td>DDS</td>
+<td>2714902</td>
+</tr>
+<tr>
+<td>TS</td>
+<td>45.6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fa-a-um-histograma-da-distribui-o-mensal-nos-4-anos-de-corridas-pagas-em-dinheiro-">Faça um histograma da distribuição mensal, nos 4 anos, de corridas pagas em dinheiro.</h3>
+<p><img src="https://imgur.com/w4jcBwK.png" alt="03"></p>
+<p>(o dataset não possui dados dos ultimos meses de 2011/2012)</p>
+<p><strong>Análise:</strong></p>
+<p>O número de viagens realizadas com dinheiro cai muito no final de ano.</p>
+<p><strong>Hipótese: </strong></p>
+<p>Talvez as pessoas tenham menos dinheiro disponível nessa época do ano.</p>
+<h3 id="fa-a-um-gr-fico-de-s-rie-temporal-contando-a-quantidade-de-gorjetas-de-cada-dia-nos-ltimos-3-meses-de-2012-">Faça um gráfico de série temporal contando a quantidade de gorjetas de cada dia,nos últimos 3 meses de 2012.</h3>
+<p>(Como visto no tópico acima, o dataset não possuia dados de 2012 o suficiente, então fiz com os de 2009).</p>
+<p><img src="https://imgur.com/Ix3T34h.png" alt="04"></p>
+<p><strong>Análise:</strong></p>
+<p>O número de gorjetas oscila muito ao longo dos meses.</p>
+<p><strong>Hipótese</strong></p>
+<p>Talvez os dias da semana estejam relacionados ao volume de gorjetas, já que é um padrão que se repete.</p>
+<h2 id="b-nus-">Bônus:</h2>
+<h3 id="qual-o-tempo-m-dio-das-corridas-nos-dias-de-s-bado-e-domingo-">Qual o tempo médio das corridas nos dias de sábado e domingo?</h3>
+<p><img src="https://imgur.com/sJdIRjr.png" alt="05"></p>
+<p>A quantidade de outliers nesses dados impacta muito mais nas métricas</p>
+<p>Plotando-o mais de perto para olhar a distribuição:</p>
+<p><img src="https://imgur.com/a9F8rWJ.png" alt="06"></p>
+<p>A distância entre a média e mediana é gritante.</p>
+<h3 id="fazer-uma-visualiza-o-em-mapa-com-latitude-e-longitude-de-pickups-e-dropoffs-noano-de-2010-">Fazer uma visualização em mapa com latitude e longitude de pickups e dropoffs noano de 2010.</h3>
+<p>Esse gráfico possui apenas as 100 primeiras corridas de 2010, para evitar billings da Mapbox e ter uma melhor interpretação dos dados.</p>
+<div>
+    <a href="https://plot.ly/~mrmtonio/28/?share_key=SbHCOmxItTLqzCpYV6tvFl" target="_blank" title="Datasprints Mapbox" style="display: block; text-align: center;"><img src="https://plot.ly/~mrmtonio/28.png?share_key=SbHCOmxItTLqzCpYV6tvFl" alt="Datasprints Mapbox" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="mrmtonio:28" sharekey-plotly="SbHCOmxItTLqzCpYV6tvFl" src="https://plot.ly/embed.js" async></script>
+</div>
+   <p>(clique na imagem para ir ao mapa interativo)</p>
+<p><strong>Insight:</strong></p>
+<p>É possível ver uma maior concentração de dropoffs ao longo do Central Park, e uma dispersão equivalente dos pickups em toda a Manhattan.</p>
+</body></html>
