@@ -1,7 +1,7 @@
 # Guia para Avaliação das Análises
 
 ## Sobre os arquivos providenciados
-* Para uma visualização da **Análise.html** sem precisar baixar o html, use este link: http://htmlpreview.github.io/?https://github.com/tonnioo/DataSprints_teste-repo/blob/master/An%C3%A1lise.html
+* Para uma visualização da **Análise.html** sem precisar baixar o html, use este link: http://htmlpreview.github.io/?https://github.com/tonnioo/DataSprints-teste/blob/master/An%C3%A1lise.html
 
 * Para rodar as queries em **SQL**, o email recrutamento@datasprints.com foi adicionado como editor do projeto, podendo ter acesso aos datasets no BigQuery: https://console.cloud.google.com/home/dashboard?orgonly=true&project=datasprintsteste&supportedpurview=organizationId 
 
